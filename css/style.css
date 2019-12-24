@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background-color: white;
+}
+.container {
+    margin-left: 56%;
+    margin-top: -58%;
+    animation: moveIn 1s ease;
+}
+.container h1 {
+    margin-bottom: 90px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ff007f;
+}
+.history {
+    width: 30%;
+    height: 102%;
+    padding: 50px 80px;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: #2e3838;
+
+    color: white;
+}
+p {
+    line-height: 28px;
+}
+
+#message,
+#key {
+    height: 8%;
+    padding-left: 10px;
+    border: 1.5px solid #413c58;
+}
+
+#message {
+    width: 65%;
+    margin-left: -130px;
+}
+#key {
+    width: 27%;
+}
+#key:focus,
+#message:focus,
+.type:focus {
+    border: 2px solid #b7adcf;
+    outline: none;
+}
+
+.hide {
+    animation: moveRight 1s ease-out;
+}
+
+.type {
+    height: 8%;
+    border: 1.5px solid #413c58;
+}
+
+.btn {
+    height: 7%;
+    width: 125px;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-left: 65%;
+    color: white;
+    background-color: #ec0867c4;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    animation: moveIn 1s ease;
+}
+.btn:hover {
+    background-color: #ec0868;
+}
+
+.rap {
+    margin-top: 35%;
+    height: 140px;
+    width: 115%;
+    padding: 30px;
+    animation: moveIn 1s ease;
+    border-radius: 20px;
+    background-color: #d87615b9;
+    text-transform: uppercase;
+    display: none;
+    margin-left: -15%;
+}
+
+img {
+    height: 30px;
+}
+
+.messageOutput {
+    margin-left: 60px;
+    margin-top: -20px;
+}
+
+.userKey {
+    margin-left: 60px;
+    margin-top: -25px;
+}
+
+@keyframes moveIn {
+    0% {
+        opacity: 0;
+        transform: translatey(90px);
+    }
+    80% {
+        transform: translatey(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+span {
+    text-transform: uppercase;
+    color: #f9c534;
+    font-weight: bold;
+}
+
+.header {
+    height: 400px;
+}

@@ -1,0 +1,61 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" href="keybar.png" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title>Encrypta</title>
+    </head>
+    <body>
+        <div class="history">
+            <div class="rap">
+                <img src="img/message.svg" />
+
+                <p class="messageOutPut">mess</p>
+
+                <img src="img/key.svg" />
+
+                <p class="userkey">key</p>
+                <p>Note: Give your key only to who you trust</p>
+            </div>
+            <div class="hide">
+                <h1>Vigenère Cipher</h1>
+
+                <p>
+                    The Vigenère cipher is a classic cipher originally developed
+                    by Italian cryptographer Giovan Battista Bellaso and
+                    published in 1553. It is named after a later French
+                    cryptographer Blaise de Vigenère, who had developed a
+                    stronger autokey cipher (a cipher that incorporates the
+                    message of the text into the key). The cipher is easy to
+                    understand and implement, but survived three centuries of
+                    attempts to break it, earning it the nickname "le chiffre
+                    indéchiffrable" or "the indecipherable cipher."The Vigenère
+                    cipher is a method of encrypting alphabetic text by using a
+                    series of different Caesar ciphers based on the letters of a
+                    keyword. It is a simple form of polyalphabetic substitution.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <img class="header" src="img/header.jpg" />
+
+            <input id="message" type="text" placeholder="Add your message..." />
+            <input id="key" type="text" placeholder="Key for Encryption" />
+            <select class="type">
+                <option value="en" selected>
+                    Encrypt
+                </option>
+                <option class="de">
+                    Decrypt
+                </option>
+            </select>
+        </div>
+        <button onclick="display()" class="btn">Begin</button>
+
+        <script src="app.js"></script>
+    </body>
+</html>
